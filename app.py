@@ -1,20 +1,17 @@
+from common import register_error_handlers
 from config import Testing as Config
+from flask import Flask, jsonify
 from flask_restful import Api
-from flask import Flask
-import json
-import os
 
 from resources import Forecast
 from resources import Register
 from resources import News
 
-basedir = os.path.abspath(os.path.dirname(__file__))
-instance_path = os.path.join(basedir, 'instances')
-api_version = Config.API_VERSION
-base_uri = f"/api/{api_version}"
+base_uri = f"/api/{(Config.API_VERSION)}"
 
-app = Flask(__name__, instance_path=instance_path)
+app = Flask(__name__)
 app.config.from_object(Config)
+register_error_handlers(app)
 
 api = Api(app)
 api.add_resource(Register, f'{base_uri}/register')

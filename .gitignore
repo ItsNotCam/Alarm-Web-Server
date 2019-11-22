@@ -4,4 +4,4 @@
 **.vscode/
 
 # ignore sensitive information
-config/forecasts.json
+**.json

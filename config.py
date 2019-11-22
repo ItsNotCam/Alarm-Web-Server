@@ -6,6 +6,9 @@ with open(os.path.join(basedir, 'config', 'dbinfo.json')) as file:
     dbinfo = json.loads(file.read())
 with open(os.path.join(basedir, 'config', 'forecasts.json')) as file:
     forecasts = json.loads(file.read())
+with open(os.path.join(basedir, 'config', 'news.json')) as file:
+    news = json.loads(file.read())
+
 
 class Config(object):
     DEBUG = False
@@ -19,4 +22,3 @@ class Testing(Config):
 
     HOST = "127.0.0.1"
     PORT = "5000"
-
