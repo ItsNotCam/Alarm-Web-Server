@@ -1,0 +1,13 @@
+{
+  "tables": {
+    "device_reg_table": "devices",
+    "usage_table": "metausage"
+  },
+
+  "db": {
+    "user": "axiiom",
+    "password": "password",
+    "host": "192.168.56.1",
+    "database": "weatherdb"
+  }
+}

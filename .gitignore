@@ -1,0 +1,7 @@
+# ignore all useless files
+**__pycache__/
+**venv/
+**.vscode/
+
+# ignore sensitive information
+config/forecasts.json
