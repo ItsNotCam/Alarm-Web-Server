@@ -1,0 +1,11 @@
+{
+	"db": {
+		"host": "",
+		"user": "",
+		"password": "",
+		"database": ""
+	},
+	"tables": {
+		"device_reg_table": "devices"
+	}
+}

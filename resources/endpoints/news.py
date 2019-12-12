@@ -1,9 +1,10 @@
+from resources.endpoints import authorize
+from common.schema import NewsSchema
+
 from werkzeug.exceptions import Unauthorized, InternalServerError, FailedDependency
 from webargs.flaskparser import use_args
-from common.schema import NewsSchema
 from flask_restful import Resource
 from flask import jsonify
-from resources import authorize
 
 import config
 import requests

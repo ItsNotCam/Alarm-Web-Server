@@ -34,6 +34,10 @@ def register_error_handlers(app):
     @app.errorhandler(FailedDependency)
     def handle_failed_dependency(err):
         return err.message, 500
+
+    @app.errorhandler(NotImplemented)
+    def handle_unimplemented(err):
+        return err.message, 501
     
     app.register_error_handler(400, handle_bad_request)
     app.register_error_handler(401, handle_unauth)

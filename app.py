@@ -3,9 +3,9 @@ from config import Testing as Config
 from flask import Flask, jsonify
 from flask_restful import Api
 
-from resources import Forecast
-from resources import Register
-from resources import News
+from resources.endpoints import Forecast
+from resources.endpoints import Register
+from resources.endpoints import News
 
 base_uri = f"/api/{(Config.API_VERSION)}"
 

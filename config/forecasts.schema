@@ -1,0 +1,14 @@
+{
+	"headers": {
+		"X-RapidAPI-Host": "",
+		"X-RapidAPI-Key": ""
+	},
+	"forecast_types": [
+		"weekly",
+		"daily"
+	],
+	"urls": {
+		"weekly": "https://community-open-weather-map.p.rapidapi.com/forecast",
+		"daily": "https://community-open-weather-map.p.rapidapi.com/forecast"
+	}
+}

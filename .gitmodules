@@ -1,0 +1,3 @@
+[submodule "resources/wpl"]
+	path = resources/wpl
+	url = git@github.com:Axiiom/weather-parse-lib.git
