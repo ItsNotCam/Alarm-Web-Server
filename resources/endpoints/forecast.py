@@ -18,7 +18,7 @@ urls = config.forecasts['urls']
 class Forecast(Resource):
     @use_args(ForecastSchema())
     def get(self, args):
-        # authorize(args['uuid'], args['api_key'])
+        authorize(args['uuid'], args['api_key'])
 
         # TODO: ADD CACHING
         forecast_type = args['forecast_type']
