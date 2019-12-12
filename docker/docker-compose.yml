@@ -1,0 +1,35 @@
+version: '3'
+services:
+        acsdb:
+                image: mysql:8.0.18
+                container_name: acsdb
+                environment:
+                        - MYSQL_ROOT_PASSWORD=password
+                volumes:
+                        - ./acsdb_config:/docker-entrypoint-initdb.d
+                networks:
+                        - dockernet
+                restart: always
+                ports:
+                        - "2375:3001"
+
+        alarm_clock_server:
+                image: axiiom/acs:2.0
+                build: .
+                container_name: acs
+                env_file:
+                        - ./local.env
+                volumes:
+                        - /home/dev/alarm_clock_server/source:/acs
+                        - ./acs_config:/acs/config
+                networks:
+                        - dockernet
+                restart: always
+                depends_on: 
+                        - "acsdb"
+                ports:
+                        - "5001:5000"
+networks:
+        dockernet:
+                external:
+                        name: dockernet

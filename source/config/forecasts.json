@@ -1,0 +1,12 @@
+{
+  "forecast_types": ["daily", "weekly", "current"],
+  "urls": {
+    "daily": "https://community-open-weather-map.p.rapidapi.com/forecast",
+    "weekly": "https://community-open-weather-map.p.rapidapi.com/forecast",
+    "current": ""
+  },
+  "headers": {
+    "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
+    "x-rapidapi-key": "cf4e6eabebmshd650e5f53ad9ef3p1c0dbajsnf3f871b9331b"
+  }
+}

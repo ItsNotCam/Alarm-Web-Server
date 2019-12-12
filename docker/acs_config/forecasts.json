@@ -1,0 +1,14 @@
+{
+	"headers": {
+		"X-RapidAPI-Host": "community-open-weather-map.p.rapidapi.com",
+		"X-RapidAPI-Key": "4735041723mshbe34feaa59fd91fp10c60djsn2eb915b4a3c1"
+	},
+	"forecast_types": [
+		"weekly",
+		"daily"
+	],
+	"urls": {
+		"weekly": "https://community-open-weather-map.p.rapidapi.com/forecast",
+		"daily": "https://community-open-weather-map.p.rapidapi.com/forecast"
+	}
+}

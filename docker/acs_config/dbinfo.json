@@ -1,0 +1,12 @@
+{
+	"db": {
+		"host": "acsdb",
+		"user": "axiiom",
+		"password": "password",
+		"database": "weatherdb"
+	},
+	"tables": {
+		"device_reg_table": "devices",
+		"usage_table":"metausage"
+	}
+}
